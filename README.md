@@ -2,6 +2,7 @@
 LabSeq sequence exercise
 
 LabSeq backend configured to run in localhost:8080/
+
 LabSeq frontend configured to run in localhost:4200/
 
 In backend cors mapping config allowed frontend url localhost:4200 and in frontend cors config allowed the url backend
