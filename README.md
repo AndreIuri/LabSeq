@@ -5,7 +5,11 @@ LabSeq backend configured to run in localhost:8080/
 
 LabSeq frontend configured to run in localhost:4200/
 
-In backend cors mapping config allowed frontend url localhost:4200 and in frontend cors config allowed the url backend
+Backend environment follow a standard approach to initialize the program.
+
+Frontend environment runs under LabSeq-Frontend/labseq-frontend ng serve
+
+In backend cors mapping config allowed access to frontend url localhost:4200 and in frontend cors config allowed the access to url backend
 
 Swagger run under localhost:8080/swagger-ui/index.html
 
