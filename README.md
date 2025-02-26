@@ -10,9 +10,9 @@ Swagger run under localhost:8080/swagger-ui/index.html
 
 LabSeqController contains two requests:
 
--> <url>/labseq/{n} where the labseq value for the position(n) is returned
+<url>/labseq/{n} where the labseq value for the position(n) is returned
 
--> <url>/labseq/all where the labseq sequence obtained is retrieved, the sequence is stored to save the reached progress using a cache method (hashmap)
+<url>/labseq/all where the labseq sequence obtained is retrieved, the sequence is stored to save the reached progress using a cache method (hashmap)
 
 Labseq method uses a hashmap to save all calculated values that will be needed for further calculations. The calculation method is based on a iterative approach.
 
