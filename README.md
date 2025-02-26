@@ -1,12 +1,12 @@
 # LabSeq
 LabSeq sequence exercise
 
-LabSeq backend configured to run in "http://localhost:8080/"
-LabSeq frontend configured to run in "http://localhost:4200/"
+LabSeq backend configured to run in localhost:8080/
+LabSeq frontend configured to run in localhost:4200/
 
-In backend cors mapping config allowed frontend url "http://localhost:4200" and in frontend cors config allowed the url backend
+In backend cors mapping config allowed frontend url localhost:4200 and in frontend cors config allowed the url backend
 
-Swagger run under http://localhost:8080/swagger-ui/index.html
+Swagger run under localhost:8080/swagger-ui/index.html
 
 LabSeqController contains two requests:
 -> <url>/labseq/{n} where the labseq value for the position(n) is returned
