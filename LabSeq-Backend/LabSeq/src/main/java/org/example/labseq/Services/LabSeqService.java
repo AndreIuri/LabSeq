@@ -5,7 +5,7 @@ import java.util.Collection;
 
 public interface LabSeqService {
 
-    BigInteger getValue(Integer n);
+    String getValue(Integer n);
 
-    Collection<BigInteger> getAllLabSeqValues();
+    String getAllLabSeqValues();
 }

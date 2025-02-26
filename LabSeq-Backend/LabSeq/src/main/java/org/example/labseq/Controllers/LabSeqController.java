@@ -31,15 +31,14 @@ public class LabSeqController {
     )
     @GetMapping("/{n}")
     public ResponseEntity<String> getValue(@PathVariable Integer n) {
-        BigInteger value = labSeqService.getValue(n);
-        String strValue = value.toString();
+        String strValue = labSeqService.getValue(n);
 
         return new ResponseEntity<>(strValue, HttpStatus.OK);
     }
 
     @Operation(summary = "Returns the obtained LabSeq sequence saved in cache")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Successfully obtained LabSeq sequence value saved in cache"),
+            @ApiResponse(responseCode = "200", description = "Successfully obtained LabSeq sequence saved in cache"),
             @ApiResponse(responseCode = "401", description = "You are not authorized to view the resource"),
             @ApiResponse(responseCode = "403", description = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(responseCode = "404", description = "The resource you were trying to reach is not found"),
@@ -48,8 +47,7 @@ public class LabSeqController {
     )
     @GetMapping("/all")
     public ResponseEntity<String> getAllLabSeqValues() {
-        Collection<BigInteger> labSeqValues = labSeqService.getAllLabSeqValues();
-        String strValue = labSeqValues.toString();
+        String strValue = labSeqService.getAllLabSeqValues();
 
         return new ResponseEntity<>(strValue, HttpStatus.OK);
     }

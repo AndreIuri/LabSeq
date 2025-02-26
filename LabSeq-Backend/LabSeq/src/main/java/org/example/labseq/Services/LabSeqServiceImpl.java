@@ -19,7 +19,7 @@ public class LabSeqServiceImpl implements LabSeqService{
     }
 
     @Override
-    public BigInteger getValue(Integer n){
+    public String getValue(Integer n){
         BigInteger value = BigInteger.valueOf(0);
 
         if(n>=0) {
@@ -36,11 +36,12 @@ public class LabSeqServiceImpl implements LabSeqService{
             value = labSeqMap.get(n);
         }
 
-        return value;
+        return value.toString();
     }
 
     @Override
-    public Collection<BigInteger> getAllLabSeqValues(){
-        return labSeqMap.values();
+    public String getAllLabSeqValues(){
+        Collection<BigInteger> sequence = labSeqMap.values();
+        return sequence.toString();
     }
 }
