@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="card paper">
+		<h1 class="center">LabSeq Sequence</h1>
+		<div>The LabSeq Sequence is the series of numbers:</div>
+		<p class="center">
+			<span class="large">0, 1, 0, 1, 1, 1, 1, 2, 2, 2, 3 ...</span>
+		</p>
+		<p>The LabSeq sequence is defined as follows:</p>
+		<ul> 
+			<li>l(0) = 0</li> 
+			<li>l(1) = 1</li> 
+			<li>l(2) = 0</li> 
+			<li>l(3) = 1</li> 
+            <li>l(n) = l(n-4) + l(n-3)</li>
+		</ul>
+		<div class="center">
+		</div>
+		<div class="center">
+			<p>Lets begin our game</p>
+			<button type="button" title="Play" (click)="play()">Play</button>
+		</div>
+	</div>
+</div>
