@@ -28,7 +28,7 @@ body{
     position: absolute;
 }
 
-.card1, .card2, .historical-title{
+.card1, .card2{
     position: static;
     width: 40%;
 }
@@ -55,8 +55,16 @@ body{
     margin-top: 40px;
 }
 
+.mt-10{
+    margin-top: 10px;
+}
+
 .center{
     text-align: center;
+}
+
+.historical{
+    margin: 10px;
 }
 
 button, input{
@@ -93,9 +101,9 @@ button:hover{
 
 .row{
     display: flex;
-    align-items: center; /* Aligns both cards to the center vertically */
-    justify-content: center; /* Centers them horizontally */
-    gap: 10px; /* Adds spacing between the cards */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
 }
 
@@ -130,4 +138,23 @@ button:hover{
     max-width: 90%;
     overflow: auto;
     word-wrap: break-word;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+    body {
+      height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns:auto;
+    }
 }
