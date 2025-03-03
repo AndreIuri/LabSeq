@@ -8,20 +8,14 @@
 			<div>
 				<p>Indicate the position to obtain the respective LabSeq sequence value given that for </p>
                 <p class="center bold">n>3, f(n) = f(n-4) + f(n-3)</p>
-				<div class="grid-container">
-					<div class="grid-item"> 
-						<p>
-							<label for="position">Position (n)</label>
-						</p>
-						<input type="number" min="0" max="1000000" value="0" name="position" placeholder="Insert the position" [(ngModel)]="position"/>
-					</div>
-					<div class="grid-item">
-						<p>
-							<label for="value">Value</label>
-						</p>
-						<div class="sequence-values" [innerHTML]="labSeqvalue"></div>
-					</div>
-				</div>
+				<p>
+					<label for="position">Position (n)</label>
+				</p>
+				<input type="number" min="0" max="1000000" value="0" name="position" placeholder="Insert the position" [(ngModel)]="position"/>
+				<p>
+					<label for="value">Value</label>
+				</p>
+				<div class="sequence-values" [innerHTML]="labSeqvalue"></div>
 				<div class="center">
 					<button type="button" title="Get Value" class="btn-get" (click)="getValue()">Get</button>
 				</div>
@@ -37,9 +31,13 @@
 			</div>
 		</div>
 		<div id="card2" class="card2">
-			<div class="row">
-				<h1 class="center historical-title">Historical</h1>
-				<button type="button" title="Refresh" class="refresh" (click)="getAllLabSeq()"><i class="fa fa-refresh"></i></button>
+			<div class="grid-container">
+				<div class="grid-item"> 
+					<h1 class="center historical">Historical</h1>
+				</div>
+				<div class="grid-item mt-10"> 
+					<button type="button" title="Refresh" class="refresh" (click)="getAllLabSeq()"><i class="fa fa-refresh"></i></button>
+				</div>
 			</div>
 			<div class="sequence-values" [innerHTML]="labSequence">
 			</div>
